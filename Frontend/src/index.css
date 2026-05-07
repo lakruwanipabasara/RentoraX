@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-teal: #0f766e;
+  --color-brand-teal-dark: #115e59;
+  --color-brand-teal-light: #f0fdfa;
+}
+
+@layer components {
+  .badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .badge-upcoming {
+    background-color: rgb(236 254 245);
+    color: rgb(6 182 212);
+  }
+
+  .badge-active {
+    background-color: var(--color-brand-teal);
+    color: white;
+  }
+}
+
+body {
+  background-color: #f8fcfc;
+  color: rgb(17 24 39);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Popup Styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+  padding: 4px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-popup-tip {
+  display: none; /* Cleaner look without the triangle tip */
+}
+
+/* Scrollbar Utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
